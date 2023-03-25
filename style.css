@@ -1,0 +1,27 @@
+body{margin: 0px;}
+*{
+    border: solid red 1px;
+}
+
+body{ background-color: red;}
+
+/* selector { propiedad : valor ; }*/
+parrafo principal{ color: yellow}
+
+/* si la etiqueta html tiene un ID, le pongo un # en css.*/
+
+.elemento{color: cyan;}
+
+/* Si la etiqueta html tiene un class, le pongo . en css*/
+
+#primer_id{font-size: large;}
+
+p{color: white;}
+p{color: green;}
+
+
+#titular{padding-left: 10px;}
+#titular{padding: 10px 0 0 10px;}
+#primer_id{margin: 40px;}
+p{margin: 20px 30px;}
+
