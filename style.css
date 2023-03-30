@@ -1,23 +1,24 @@
 body{margin: 0px;}
-*{
-    border: solid red 1px;
+/*{
+    border: solid rgb(0, 0, 0) 1px;
 }
-
-body{ background-color: red;}
+/**/
+body{ background-color: #ffffff;}
 
 /* selector { propiedad : valor ; }*/
-parrafo principal{ color: yellow}
+/* parrafo principal{ color: rgb(0, 34, 255)}
 
 /* si la etiqueta html tiene un ID, le pongo un # en css.*/
 
-.elemento{color: cyan;}
+.elemento{color: rgb(255, 0, 0);}
 
 /* Si la etiqueta html tiene un class, le pongo . en css*/
 
-#primer_id{font-size: large;}
-
-p{color: white;}
-p{color: green;}
+#titular{font-size: 5vw;}
+#titular{font-family: Arial, Helvetica, sans-serif;}
+#primer_id{font-size: 1vw;}
+#primer_id{font-family: Arial, Helvetica, sans-serif;}
+p{color: #658625;}
 
 
 #titular{padding-left: 10px;}
