@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--- Esta línea indica que es un documento html 5-->
-<html lang="en">
+<html lang="es">
     <!-- inicia el espacio de html y setea el idioma defecto de la web-->
 <head>
     <meta charset="UTF-8">
@@ -11,22 +11,54 @@
     <!-- le indicamos a la web, que el contenido va a estar en su tamaño original-->
     <link rel="stylesheet" href="style.css">
     <title>Mi página Web</title>
-    
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+    </style>
     <!-- Todo lo que este entre los '<title>' es el título-->
 
 </head>
 <body>
     <header>
-        <img src="./LOGO.png" alt="" width="450px" height="190px"><!-- menú de navegación, registro de usuario, buscador, logo-->
-    </header>
+        <div id="header">
+          <a href="https://programacion-web-beryl.vercel.app/" class="logo">
+            <img id="logoimg" src="./LOGO.png" alt="Autoshopping logo">
+          </a>
+          <nav>
+            <ul>
+              <li><a href="">Inicio</a></li>
+              <li><a href="">Vehículos nuevos</a></li>
+              <li><a href="">Vehículos usados</a></li>
+              <li><a href="">Financiamiento</a></li>
+              <li><a href="">Contacto</a></li>
+              <li><a href="" class="btn-primary">Encuentra tu auto</a></li>
+            </ul>
+          </nav>
+         
+        </div>
+      </header>
     <main>
-        <a href="https://www.porsche.com"> Ir a Porsche </a>
-        <h1 id="titular">Ursus Marititus</h1>
-        <p id="primer_id">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit at laborum eum nostrum quas blanditiis! Odio fuga, minus, aliquam est quae non voluptates facere, magnam beatae et nesciunt esse accusantium.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis molestias autem ab id quidem at nam optio sapiente, nisi omnis. Iste laudantium mollitia officia id voluptate ipsum neque perferendis.
-        Odio aspernatur facere, facilis optio asperiores ipsa molestias sed ex consequatur minus accusantium nemo blanditiis et, assumenda accusamus? Accusamus blanditiis aliquid reprehenderit? Delectus quia laudantium provident nostrum dolorem, iste quas.
-        Aspernatur ratione eaque officia omnis est placeat quia harum repellendus tempore. Distinctio, nostrum! Porro deleniti dicta vitae adipisci perferendis incidunt iste, numquam eveniet rem modi consectetur exercitationem veniam veritatis eaque.
-        Vero eveniet ipsum deserunt saepe officia nobis nam atque laudantium facere quidem, enim fugit eos nostrum excepturi tempora culpa aperiam doloribus rerum distinctio sequi quo sunt quis accusamus. Minima, architecto.</p>
+        <a href="https://www.porsche.com/usa/modelstart/all/?modelrange=911" target="_blank" id="personalizar"> Configura tu propio Porsche </a>
+        <h1 id="titular">Autoshopping</h1>
+        <h3 id="slogan">El mejor auto, al mejor precio</h3>
+        <div>
+            <select id="2230463214" class="form-control" aria-label="Select A Make" name="makeCode" labelclassname="text-white" aria-required="true"><option selected="" label="Marca" value="">Marca</option><option label="AMC" value="AMC">AMC</option><option label="Acura" value="ACURA">Acura</option><option label="Alfa Romeo" value="ALFA">Alfa Romeo</option><option label="Aston Martin" value="ASTON">Aston Martin</option><option label="Audi" value="AUDI">Audi</option><option label="BMW" value="BMW">BMW</option><option label="Bentley" value="BENTL">Bentley</option><option label="Bugatti" value="BUGATTI">Bugatti</option><option label="Buick" value="BUICK">Buick</option><option label="Cadillac" value="CAD">Cadillac</option><option label="Chevrolet" value="CHEV">Chevrolet</option><option label="Chrysler" value="CHRY">Chrysler</option><option label="Daewoo" value="DAEW">Daewoo</option><option label="Datsun" value="DATSUN">Datsun</option><option label="DeLorean" value="DELOREAN">DeLorean</option><option label="Dodge" value="DODGE">Dodge</option><option label="Eagle" value="EAGLE">Eagle</option><option label="FIAT" value="FIAT">FIAT</option><option label="Ferrari" value="FER">Ferrari</option><option label="Fisker" value="FISK">Fisker</option><option label="Ford" value="FORD">Ford</option><option label="Freightliner" value="FREIGHT">Freightliner</option><option label="GMC" value="GMC">GMC</option><option label="Genesis" value="GENESIS">Genesis</option><option label="Geo" value="GEO">Geo</option><option label="HUMMER" value="AMGEN">HUMMER</option><option label="Honda" value="HONDA">Honda</option><option label="Hyundai" value="HYUND">Hyundai</option><option label="INFINITI" value="INFIN">INFINITI</option><option label="Isuzu" value="ISU">Isuzu</option><option label="Jaguar" value="JAG">Jaguar</option><option label="Jeep" value="JEEP">Jeep</option><option label="Karma" value="KARMA">Karma</option><option label="Kia" value="KIA">Kia</option><option label="Lamborghini" value="LAM">Lamborghini</option><option label="Land Rover" value="ROV">Land Rover</option><option label="Lexus" value="LEXUS">Lexus</option><option label="Lincoln" value="LINC">Lincoln</option><option label="Lotus" value="LOTUS">Lotus</option><option label="Lucid" value="LUCID">Lucid</option><option label="MAZDA" value="MAZDA">MAZDA</option><option label="MINI" value="MINI">MINI</option><option label="Maserati" value="MAS">Maserati</option><option label="Maybach" value="MAYBACH">Maybach</option><option label="McLaren" value="MCLAREN">McLaren</option><option label="Mercedes-Benz" value="MB">Mercedes-Benz</option><option label="Mercury" value="MERC">Mercury</option><option label="Mitsubishi" value="MIT">Mitsubishi</option><option label="Nissan" value="NISSAN">Nissan</option><option label="Oldsmobile" value="OLDS">Oldsmobile</option><option label="Plymouth" value="PLYM">Plymouth</option><option label="Polestar" value="POLESTAR">Polestar</option><option label="Pontiac" value="PONT">Pontiac</option><option label="Porsche" value="POR">Porsche</option><option label="RAM" value="RAM">RAM</option><option label="Rivian" value="RIVIAN">Rivian</option><option label="Rolls-Royce" value="RR">Rolls-Royce</option><option label="SRT" value="SRT">SRT</option><option label="Saab" value="SAAB">Saab</option><option label="Saturn" value="SATURN">Saturn</option><option label="Scion" value="SCION">Scion</option><option label="Subaru" value="SUB">Subaru</option><option label="Suzuki" value="SUZUKI">Suzuki</option><option label="Tesla" value="TESLA">Tesla</option><option label="Toyota" value="TOYOTA">Toyota</option><option label="Volkswagen" value="VOLKS">Volkswagen</option><option label="Volvo" value="VOLVO">Volvo</option><option label="Yugo" value="YUGO">Yugo</option><option label="smart" value="SMART">smart</option></optgroup></select>
+        </div>
+        <div>
+            <select id="1617644117" class="form-control" aria-label="Select A Model" name="ModelCode" labelclassname="text-white" aria-required="true"><option selected="" label="Modelo" value="">Any Model</option></select>
+        </div>
+        <p id="primer_id">Bienvenido a Autoshopping, el lugar donde encontrarás el auto de tus sueños. Con nuestra amplia selección de vehículos de alta calidad y precios competitivos, estamos seguros de que podrás encontrar el auto perfecto para ti.
+
+            En Autoshopping, nos enorgullece ofrecer una experiencia de compra fácil y conveniente para nuestros clientes. Con nuestro equipo altamente capacitado y amigable, puedes estar seguro de que recibirás un servicio excepcional desde el primer momento en que te comuniques con nosotros.
+            
+            Además, para garantizar tu satisfacción total, ofrecemos una garantía de satisfacción del 100% en todos nuestros vehículos. Esto significa que si no estás completamente satisfecho con tu compra, haremos todo lo posible para hacerlo bien.
+            
+            No importa si buscas un auto nuevo o usado, en Autoshopping tenemos algo para todos los gustos y presupuestos. Y con nuestras opciones de financiamiento flexible, podrás obtener el auto que deseas sin tener que preocuparte por el costo total de inmediato.
+            
+            Entonces, ¿por qué esperar? Comienza a explorar nuestra amplia selección de vehículos hoy mismo y encuentra el auto perfecto para ti en Autoshopping.</p>
         <ol>
             <li>Primero que nada, buenos días.</li>
             <li>Segundo, Francia.</li>
@@ -36,11 +68,19 @@
             <li class="elemento">Elemento</li>
             <li class="elemento">Elementoooo</li>
         </ul>
-        <a href="https://www.porsche.com/usa/models/911/911-models/">
+        <a href="https://www.porsche.com/usa/models/911/911-models/" target="_blank">
             <img src="./image/descarga.jpg" alt="error">
         </a>
         <!--<input type="button" value="no tocar"-->
     </main>
+    <div class="grid-container">
+    <div class="grid">1</div>
+    <div class="grid">2</div>
+    <div class="grid">3</div>
+    <div class="grid">4</div>
+    <div class="grid">5</div>
+    <div class="grid">6</div>
+    </div>
     <footer><!-- legales y datos relevantes--></footer>
 </body>
 
