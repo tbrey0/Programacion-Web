@@ -1,5 +1,35 @@
+/*NOTAS Y SOBRAS
+{
+    border: solid rgb(0, 0, 0) 1px;
+}
+/**/
+/* selector { propiedad : valor ; }*/
+/* parrafo principal{ color: rgb(0, 34, 255)}
+/* si la etiqueta html tiene un ID, le pongo un # en css.*/
+/* Si la etiqueta html tiene un class, le pongo . en css*/
+/*
+#personalizar{color: #f3b229;}
+#slogan{color: #f3b229;}
+#slogan{font-size: 2vw;}
+#titular{
+    font-size: 5vw;
+    margin-top: 90px;
+}
+#titular{color: #f3b229;}
+#titular{font-family: 'Courier New', Courier, monospace;}
+#titular{text-align: center;}
+#primer_id{font-size: 1vw;}
+#primer_id{font-family: Arial, Helvetica, sans-serif;
+    columns: 20cqh;
+}
+#titular{padding-left: 10px;}
+#titular{padding: 10px 0 0 10px;}
+#primer_id{margin: 40px;}
+*/
+
+/* Header */
 #header {
-background-color: #4ac0e7;
+background-color: #ffffff;
 height: 100px;
 box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 position: fixed;
@@ -10,12 +40,10 @@ justify-content: space-between;
 align-items: center;
 }
 
-
 .logo {
 display: block;
 height: fit-content;
 width: fit-content;
-
 }
 
 #logoimg{
@@ -42,8 +70,12 @@ font-size: 16px;
 text-transform: uppercase;
 }
 
-nav a:hover {
+nav a:hover:not(.btn-primary) {
 color: #007bff;
+}
+
+.btn-primary:hover{
+  color: #000000;
 }
 
 .btn-primary {
@@ -55,59 +87,127 @@ font-size: 16px;
 text-transform: uppercase;
 text-decoration: none;
 }
+/* body */
 
+body{margin: 0px;
+  background-color: #f2f2f2;
 
-body{margin: 0px;}
-/*{
-    border: solid rgb(0, 0, 0) 1px;
 }
-/**/
-body{ background-color: lightgray;}
 
-
-/* selector { propiedad : valor ; }*/
-/* parrafo principal{ color: rgb(0, 34, 255)}
-
-/* si la etiqueta html tiene un ID, le pongo un # en css.*/
-
-.elemento{color: rgb(255, 0, 0);}
-
-/* Si la etiqueta html tiene un class, le pongo . en css*/
-#personalizar{color: #f3b229;}
-#slogan{color: #f3b229;}
-#slogan{font-size: 2vw;}
-#titular{font-size: 5vw;}
-#titular{color: #f3b229;}
-#titular{font-family: 'Courier New', Courier, monospace;}
-#titular{text-align: center;}
-#primer_id{font-size: 1vw;}
-#primer_id{font-family: Arial, Helvetica, sans-serif;}
-p{color: #f3b229;}
-p{font-family: Arial, Helvetica, sans-serif;}
-
-#titular{padding-left: 10px;}
-#titular{padding: 10px 0 0 10px;}
-#primer_id{margin: 40px;}
-p{margin: 20px 30px;}
-
-
-
-
-
-.grid-container{
-grid-template-areas: 
-    'header header header header header header header'
-    'main main main main main main'
-    'footer footer footer footer footer footer';
-display: grid;
-grid-template-columns: auto auto auto;
-background-color: #007bff;
-padding: 10px;
-justify-content: center;
+p{
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px 30px;
 }
-.grid{
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    text-align: center;
-    font-size: 30px;
+
+.intro {
+  background-image: url("21960.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.intro h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #333333;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  border: 2px solid #333333;
+}
+
+.btn-secondary:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* Features */
+.chamuyos {
+  background-color: #f2f2f2;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.chamuyos h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.chamuyo {
+  margin-bottom: 4rem;
+}
+
+.chamuyo img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.chamuyo h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.chamuyo p {
+  font-size: 1.2rem;
+}
+
+/* Clientes */
+.clientes {
+  background-color: #ffffff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.clientes h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.clientes {
+  margin-bottom: 4rem;
+}
+
+.clientes img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.clientes p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.clientes cite {
+  font-style: italic;
+  font-weight: 500;
+}
+/* Footer*/
+#footer{
+  background-color: #f2f2f2;
+  margin-bottom: 2rem;
+  width: 100%;
+  bottom: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
