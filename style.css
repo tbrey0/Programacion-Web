@@ -268,7 +268,7 @@ p{
   margin-bottom: 2rem;
   width: 100%;
   bottom: 0%;
-  display: flex;
+  display: none;
   justify-content: space-between;
 }
 }
