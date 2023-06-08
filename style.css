@@ -60,27 +60,29 @@ list-style: none;
 margin: 0;
 padding: 0;
 display: flex;
-display: none;
+
 }
 
 nav li {
 margin-left: 20px;
-display: none;
-}
 
+}
+/* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
 nav a {
 color: #333;
 text-decoration: none;
 font-weight: bold;
 font-size: 16px;
 text-transform: uppercase;
-display: none;
+
 }
 
 nav a:hover:not(.boton-encontra) {
 color: #007bff;
 }
-
+.na{
+  display: none;
+}
 .boton-encontra:hover{
   color: #000000;
 }
@@ -93,6 +95,7 @@ border-radius: 5px;
 font-size: 16px;
 text-transform: uppercase;
 text-decoration: none;
+margin-right: 1rem;
 }
 /* body */
 
@@ -148,6 +151,7 @@ p{
 .busqueda {
   background-color: #f4f4f4;
   padding: 20px;
+  margin-top: 5rem;
 }
 
 .busqueda .container {
