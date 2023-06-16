@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autoshopping - Vehículos Nuevos</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="filtroDeBusqueda.js" defer></script>
+  </head>
+  <body>
+    <header>
+        <div id="header">
+          <a href="index.html" class="logo">
+            <img id="logoimg" src="./LOGO.png" alt="Autoshopping logo">
+          </a>
+          <nav>
+            <ul>
+              <li><a href="index.html" class="na">Inicio</a></li>
+              <li><a href="" class="na">Vehículos nuevos</a></li>
+              <li><a href="" class="na">Vehículos usados</a></li>
+              <li><a href="" class="na">Accesorios</a></li>
+              <li><a href="" class="na">Contacto</a></li>
+              <li><a href="busqueda.html" class="boton-encontra">Encuentra tu auto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <main>
+        <section class="busqueda">
+            <h1>Búsqueda de Autos</h1>
+        <label for="marca">Marca:</label>
+        <select id="marca">
+            <option value="">Todas</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Honda">Honda</option>
+            <option value="Ford">Ford</option>
+            <option value="Chevrolet">Chevrolet</option>
+        </select>
+        <button onclick="buscarAutos()" id="buscar">Buscar</button>
+        </section>
+        
+    </main>
+    <footer><!-- legales y datos relevantes-->
+        <div id="footer">
+          <nav>
+            <ul>
+              <!--Bullet points copiados de ML-->
+              <li><a href="">Trabajá con nosotros</a></li>
+              <li><a href="">Términos y condiciones</a></li>
+              <li><a href="">Cómo cuidamos tu privacidad</a></li>
+              <li><a href="">Accesibilidad</a></li>
+              <li><a href="">Ayuda</a></li>
+              <li><a href="">Defensa del Consumidor</a></li>
+          </ul>
+          </nav>
+        </div>
+      </footer>
+  </body>
+</html>

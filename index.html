@@ -11,8 +11,7 @@
     <!-- le indicamos a la web, que el contenido va a estar en su tamaño original-->
     <link rel="stylesheet" href="style.css">
     <title>Autoshopping</title>
-    <style>
-    </style>
+    <link rel="shortcut icon" href="./auto.jpg">
     <!-- Todo lo que este entre los '<title>' es el título-->
 </head>
 <body>
@@ -24,10 +23,8 @@
           <nav>
             <ul>
               <li><a href="index.html" class="na">Inicio</a></li>
-              <li><a href="" class="na">Vehículos nuevos</a></li>
-              <li><a href="" class="na">Vehículos usados</a></li>
-              <li><a href="" class="na">Financiamiento</a></li>
-              <li><a href="" class="na">Contacto</a></li>
+              <li><a href="#opiniones" class="na">Clientes</a></li>
+              <li><a href="https://wa.me/+5491161659369" class="na">Contacto</a></li>
               <li><a href="busqueda.html" class="boton-encontra" >Encuentra tu auto</a></li>
             </ul>
           </nav>
@@ -36,8 +33,7 @@
     <main>
       <section class="intro">
         <div>
-          <h3>Encontrá el auto de tus sueños con Autoshopping</h3>
-          <a href="" class="boton-explorar">Explora nuestros vehículos</a>
+          <a href="busqueda.html" class="boton-explorar">Explora nuestros vehículos</a>
         </div>
       </section>
     </body>
@@ -62,7 +58,7 @@
           </div>
         </div>
       </section>
-      <section class="clientes">
+      <section class="clientes" id="opiniones">
         <div>
           <h2>Lo que dicen nuestros clientes</h2>
           <div class="cliente">
@@ -91,5 +87,6 @@
         </nav>
       </div>
     </footer>
+    <script src="./filtroDeBusqueda.js"></script>
 </body>
 </html>

@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Autoshopping - Vehículos Nuevos</title>
+    <title>Filtro de productos y busqueda</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
-    
+    <link rel="shortcut icon" href="./auto.jpg">
   </head>
   <body>
     <header>
@@ -16,74 +21,40 @@
           <nav>
             <ul>
               <li><a href="index.html" class="na">Inicio</a></li>
-              <li><a href="" class="na">Vehículos nuevos</a></li>
-              <li><a href="" class="na">Vehículos usados</a></li>
-              <li><a href="" class="na">Financiamiento</a></li>
-              <li><a href="" class="na">Contacto</a></li>
-              <li><a href="busqueda.html" class="boton-encontra">Encuentra tu auto</a></li>
+              <li><a href="#opiniones" class="na">Clientes</a></li>
+              <li><a href="https://wa.me/+5491161659369" class="na">Contacto</a></li>
+              <li><a href="busqueda.html" class="boton-encontra" >Encuentra tu auto</a></li>
             </ul>
           </nav>
         </div>
       </header>
-    <main>
-        <section class="busqueda">
-            <h1>Búsqueda de Autos</h1>
-        <label for="marca">Marca:</label>
-        <select id="marca">
-            <option value="">Todas</option>
-            <option value="Toyota">Toyota</option>
-            <option value="Honda">Honda</option>
-            <option value="Ford">Ford</option>
-            <option value="Chevrolet">Chevrolet</option>
-        </select>
-        <button onclick="buscarAutos()">Buscar</button>
-    
-        <script>
-            var autos = [
-            { marca: "Toyota", modelo: "Corolla", precio: 25000 },
-            { marca: "Honda", modelo: "Civic", precio: 23000 },
-            { marca: "Toyota", modelo: "Camry", precio: 28000 },
-            { marca: "Ford", modelo: "Mustang", precio: 40000 },
-            { marca: "Chevrolet", modelo: "Cruze", precio: 22000 },
-            { marca: "Toyota", modelo: "Rav4", precio: 30000 }
-            ];
-    
-            function buscarAutos() {
-            var marcaSeleccionada = document.getElementById("marca").value;
-    
-            var resultados = autos.filter(function(auto) {
-                return marcaSeleccionada === "" || auto.marca === marcaSeleccionada;
-            });
-    
-            console.log("Resultados de la búsqueda:");
-            console.log(resultados);
-    
-            
-            var nuevoAuto = { marca: "Nissan", modelo: "Sentra", precio: 27000 };
-            autos.push(nuevoAuto);
-            console.log("Array después de push:", autos);
-    
-            var autoEliminado = autos.pop();
-            console.log("Array después de pop:", autos);
-            console.log("Auto eliminado:", autoEliminado);
-            }
-        </script>
-        </section>
-    </main>
-    <footer><!-- legales y datos relevantes-->
-        <div id="footer">
-          <nav>
-            <ul>
-              <!--Bullet points copiados de ML-->
-              <li><a href="">Trabajá con nosotros</a></li>
-              <li><a href="">Términos y condiciones</a></li>
-              <li><a href="">Cómo cuidamos tu privacidad</a></li>
-              <li><a href="">Accesibilidad</a></li>
-              <li><a href="">Ayuda</a></li>
-              <li><a href="">Defensa del Consumidor</a></li>
-          </ul>
-          </nav>
-        </div>
-      </footer>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Encontrá tu auto ideal..."
+        />
+        <button id="search">Buscar</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('Todos')">Todos</button>
+        <button class="button-value" onclick="filterProduct('Camionetas')">
+          Camionetas
+        </button>
+        <button class="button-value" onclick="filterProduct('Compactos')">
+          Compactos
+        </button>
+        <button class="button-value" onclick="filterProduct('Deportivos')">
+          Deportivos
+        </button>
+        <button class="button-value" onclick="filterProduct('Motos')">
+          Motos
+        </button>
+      </div>
+      <div id="products"></div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
   </body>
 </html>
