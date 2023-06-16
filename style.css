@@ -244,6 +244,10 @@ img {
   font-size: 1.2rem;
 }
 
+.ops{
+  visibility: hidden;
+}
+
 /* Clientes */
 .clientes {
   background-color: #ffffff;
@@ -532,6 +536,10 @@ img {
 
 .chamuyo p {
   font-size: 1.2rem;
+}
+
+.ops{
+  visibility: hidden;
 }
 
 /* Clientes */
